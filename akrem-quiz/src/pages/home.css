@@ -1,0 +1,144 @@
+/* The entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+    height: 5px; /* Height of the horizontal scrollbar */
+  }
+  
+  /* The track (background) of the scrollbar */
+  ::-webkit-scrollbar-track {
+    background: var(--c4); /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* The draggable handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--c3); /* Red color */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* Add padding around the thumb */
+  }
+  
+  /* The draggable handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--c2); /* Darker red on hover */
+  }
+
+
+
+
+
+
+
+
+.home-page {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: var(--c1);
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+}
+.home-page header{
+    width: 100%;
+    height: 10vh;
+    /* background-color: violet ; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.home-page header h3{
+    margin-left: 15px;
+    color: var(--c2);
+}
+
+
+.home-page header .coin-cnt{
+    background-color: var(--c3);
+    width: 100px;
+    height: 50px;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    margin-right: 15px;
+}
+
+.home-page header .coin-cnt p{
+    color: var(--c1);
+    margin-left: 5px;
+}
+
+.home-page header .coin-cnt .img-cnt{
+    background-color: var(--c1);
+    width: 45px;
+    height: 45px;
+    border-radius: 5rem;
+}
+
+.home-page header .coin-cnt .img-cnt img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire div */
+}
+
+.home-page h1{
+    color: var(--c2);
+    margin-left: 15px;
+}
+
+.home-page .test-list{
+    margin-top: 5vh;
+    width: 100vw;
+    height: 30vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    /* scrollbar-width: ; */
+    overflow-x: hidden;
+    overflow-x: auto;
+}
+
+.home-page .test-list .card{
+    /* width: 200px; */
+    
+    min-width: 300px;
+    background-color: var(--c1);
+    margin: 5px 15px;
+    max-height: 250px;
+    border-radius: 1rem;
+    overflow: hidden;
+    /* border: solid 1px var(--c4); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.home-page .test-list .card .img-card-cnt{
+    width: 70%;
+    margin-left: 30% ;
+    height: 70%;
+
+}
+
+.home-page .test-list .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-page .test-list .card .text{
+    margin-left: 15px;
+}
+
+.home-page .test-list .card .text h3{
+    color: var(--c2);
+
+}
+
+.home-page .test-list .card .text small{
+    color: var(--c4);
+    
+}

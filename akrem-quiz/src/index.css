@@ -1,3 +1,35 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* line-height: 1.5;
+  font-weight: 400; */
+
+  --c1: #FFFFFF;
+  --c2: #272052;
+  --c3: #927AFF;
+  --c4: #D8D5EA;
+  --c5: #32BA7C;
+  --c6: #AF7EE7;
+  --c7: #FC6049;
+
+
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
