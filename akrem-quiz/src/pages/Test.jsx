@@ -17,21 +17,25 @@ const Test = (props) => {
         </div>
       </header>
     
-      {data.topic.map((item) => {
+      {data.topic.map((item,index) => {
         if (item.name === props.name) {
-          return item.qts.map((itm, index) => (
+          return(
             <div key={index} className='qs' >
               <div className='img-cnt'>
+                <img src={item.qts[0].img}/>
                 {/* <img src={itm.image} alt={itm.name} /> Add a valid src */}
               </div>
-              <h1>{itm.name}</h1>
-              <div className='btn'>
-                <h3>GET STARTED</h3>
-              </div>
+              <h1>{item.qts[0].name}</h1>
+              {item.qts[0].ch.map((itm)=>(
+            
+                    <div className='btn'>
+                        <h3>{itm}</h3>
+                    </div>
+              ))
+            }  
             </div>
-          ));
+          );
         }
-        return null; // Return null for items that don't match the condition
       })}
     </div>
   );
