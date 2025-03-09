@@ -3,13 +3,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Start from './pages/Start'
 import Home from './pages/Home'
+import Test from './pages/Test'
+
 
 function App() {
 
   return (
     <>
       {/* <Start/> */}
-      <Home/>
+      {/* <Home/> */}
+      <Test name='sport'/>
     </>
   )
 }

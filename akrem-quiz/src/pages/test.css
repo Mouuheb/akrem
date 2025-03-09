@@ -1,0 +1,62 @@
+.test-page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/f6.png'); /* Path to your image */ 
+}
+
+.test-page header{
+    width: 100%;
+    height: 10vh;
+    background-color: violet ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.test-page header h3{
+    margin-left: 15px;
+    color: var(--c2);
+}
+
+
+.test-page header .coin-cnt{
+    background-color: var(--c3);
+    width: 100px;
+    height: 50px;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    margin-right: 15px;
+}
+
+.test-page header .coin-cnt p{
+    color: var(--c1);
+    margin-left: 5px;
+}
+
+.test-page header .coin-cnt .img-cnt{
+    background-color: var(--c1);
+    width: 45px;
+    height: 45px;
+    border-radius: 5rem;
+}
+
+.test-page header .coin-cnt .img-cnt img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire div */
+}
+
+.test-page .qs{
+    background-color: aqua;
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    
+}
