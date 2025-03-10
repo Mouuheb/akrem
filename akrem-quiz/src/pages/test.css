@@ -17,12 +17,15 @@
 
 .test-page header h3{
     margin-left: 15px;
-    color: var(--c2);
+    color: var(--c1);
+    border: solid 1px;
+    border-radius: 10rem;
+    padding: 2px 8px;
 }
 
 
 .test-page header .coin-cnt{
-    background-color: var(--c3);
+    background-color: var(--c1);
     width: 100px;
     height: 50px;
     border-radius: 5rem;
@@ -35,12 +38,12 @@
 }
 
 .test-page header .coin-cnt p{
-    color: var(--c1);
+    color: var(--c2);
     margin-left: 5px;
 }
 
 .test-page header .coin-cnt .img-cnt{
-    background-color: var(--c1);
+    background-color: var(--c3);
     width: 45px;
     height: 45px;
     border-radius: 5rem;
@@ -95,4 +98,18 @@
     box-shadow: 0px 5px 1px var(--c4);
     /* width: fit-content; */
 
+}
+
+.test-page .qs p, .test-page .qs h1 {
+    color: var(--c1);
+    text-align: left;
+    margin-left: 25px;
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
 }
