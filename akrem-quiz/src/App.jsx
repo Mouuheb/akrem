@@ -4,6 +4,7 @@ import './App.css'
 import Start from './pages/Start'
 import Home from './pages/Home'
 import Test from './pages/Test'
+import Res from './pages/Res'
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <>
       {/* <Start/> */}
       {/* <Home/> */}
-      <Test name='sport'/>
+      {/* <Test name='sport'/> */}
+      <Res score='50' />
     </>
   )
 }

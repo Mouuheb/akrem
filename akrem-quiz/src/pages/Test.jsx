@@ -69,13 +69,13 @@ const Test = (props) => {
                   </div>)
                   }
                   <div className='btn' onClick={() => {nst()}}>
-                    <h3>Next Question</h3>
+                    <h3>Next</h3>
                   </div>
-                  <div>
+                  <div className='res-cnt'>
                     {ans ===item.qts[num].a &&(
                       <><p>That's the right Answer +10 coins</p>
                     <div className='img-cnt-res'>
-                      <img/>
+                      <img src='img/f5.png'/>
                     </div></>
                   )}
                   </div>
