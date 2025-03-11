@@ -18,12 +18,13 @@ const Test = (props) => {
     if (num<Qcnt-1){
       setNum(num+1)
       setNext(true)
+      setScore(true)
     }
     else{
       navigate('/res')
       setFin(true)
     }
-    setScore(true)
+    
     
   }
   const Ans = (x)=>{
