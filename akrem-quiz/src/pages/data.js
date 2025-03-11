@@ -9,7 +9,7 @@ const data = {
                 {
                     q:"q1",
                     a:"ch-1",
-                    img:"img/f7.png",
+                    img:"/img/f7.png",
                     ch:[
                         "ch-1",
                         "ch-2",
@@ -19,7 +19,7 @@ const data = {
                 {
                     q:"q2",
                     a:"ch-1",
-                    img:"img/f7.png",
+                    img:"/img/f7.png",
                     ch:[
                         "ch-1",
                         "ch-2",
@@ -29,7 +29,7 @@ const data = {
                 {
                     q:"q3",
                     a:"ch-1",
-                    img:"img/f7.png",
+                    img:"/img/f7.png",
                     ch:[
                         "ch-1",
                         "ch-2",
@@ -41,14 +41,14 @@ const data = {
         },
         {
             name:'science',
-            img:'img/f3.png',
+            img:'/img/f3.png',
             title:'science Quiz',
             qt:'3 Questions',
             qts:[
                 {
                     q:"q1",
                     a:"ch-1",
-                    img:"img/f7.png",
+                    img:"/img/f7.png",
                     ch:[
                         "ch-1",
                         "ch-2",
@@ -58,7 +58,7 @@ const data = {
                 {
                     q:"q2",
                     a:"ch-1",
-                    img:"img/f7.png",
+                    img:"/img/f7.png",
                     ch:[
                         "ch-1",
                         "ch-2",
@@ -68,7 +68,7 @@ const data = {
                 {
                     q:"q3",
                     a:"ch-1",
-                    img:"img/f7.png",
+                    img:"/img/f7.png",
                     ch:[
                         "ch-1",
                         "ch-2",
@@ -80,14 +80,14 @@ const data = {
         },
         {
             name:'math',
-            img:'img/f4.png',
+            img:'/img/f4.png',
             title:'math Quiz',
             qt:'3 Questions',
             qts:[
                 {
                     q:"q1",
                     a:"ch-1",
-                    img:"img/f7.png",
+                    img:"/img/f7.png",
                     ch:[
                         "ch-1",
                         "ch-2",
@@ -97,7 +97,7 @@ const data = {
                 {
                     q:"q2",
                     a:"ch-1",
-                    img:"img/f7.png",
+                    img:"/img/f7.png",
                     ch:[
                         "ch-1",
                         "ch-2",
@@ -107,7 +107,7 @@ const data = {
                 {
                     q:"q3",
                     a:"ch-1",
-                    img:"img/f7.png",
+                    img:"/img/f7.png",
                     ch:[
                         "ch-1",
                         "ch-2",

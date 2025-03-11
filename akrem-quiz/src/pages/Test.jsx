@@ -42,7 +42,8 @@ const Test = (props) => {
         <div className='coin-cnt'>
           <p>{props.score}</p>
           <div className='img-cnt'>
-            <img src='img/f5.png' alt="coin" />
+            {/* <img src='img/f5.png' alt="coin" /> */}
+            <img src='/img/f5.png' alt="coin" />
           </div>
         </div>
       </header>
@@ -50,7 +51,7 @@ const Test = (props) => {
       {data.topic.map((item,index) => {
         if (item.name === props.name) {
           return(
-            <div key={index} className='qs' >
+            <div key={index} className='qs'>
               <div className='img-cnt'>
                 <img src={item.qts[num].img}/>
               </div>
@@ -82,10 +83,9 @@ const Test = (props) => {
 
                     {ans ===item.qts[num].a &&(
                       <><p 
-                      // onLoad={()=>{props.updateScore()}}
                       >That's the right Answer +10 coins</p>
                     <div className='img-cnt-res'>
-                      <img src='img/f5.png'/>
+                      <img src='/img/f5.png'/>
                     </div></>
                   )}
                   </div>

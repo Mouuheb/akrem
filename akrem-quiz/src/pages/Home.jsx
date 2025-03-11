@@ -18,9 +18,9 @@ const Home = (props) => {
         </header>
         <h1>What would you like to play today? </h1>
         <div className='test-list'>
-            {data.topic.map((item)=>{
+            {data.topic.map((item,index)=>{
                 return(
-                    <div className='card' key={item.id} onClick={() => navigate(`/test/${item.name}`)} >
+                    <div className='card' key={index} onClick={() => navigate(`/test/${item.name}`)} >
                         <div className='img-card-cnt'>
                             <img src={item.img}/>
                         </div>
