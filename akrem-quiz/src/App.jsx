@@ -5,17 +5,30 @@ import Start from './pages/Start'
 import Home from './pages/Home'
 import Test from './pages/Test'
 import Res from './pages/Res'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState } from 'react'
 
 
 function App() {
+  const [score,setScore] = useState(0);
+
+  const Add = ()=>{
+    setScore(score+10);
+  }
 
   return (
-    <>
-      {/* <Start/> */}
-      {/* <Home/> */}
-      {/* <Test name='sport'/> */}
-      <Res score='50' />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Start />} />
+        <Route path="/home" element={<Home score={score}/>} />
+
+        <Route path="/test/sport" element={<Test name='sport' updateScore={Add} score={score}/>} />
+        <Route path="/test/science" element={<Test name='science' updateScore={Add} score={score}/>} />
+        <Route path="/test/math" element={<Test name='math' updateScore={Add} score={score}/>} />
+        
+        <Route path="/res" element={<Res score={score} />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

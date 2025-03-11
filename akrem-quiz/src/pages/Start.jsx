@@ -1,7 +1,9 @@
 import React from 'react'
 import './start.css'
+import {useNavigate } from 'react-router-dom';
 
 const Start = () => {
+  const navigate = useNavigate();
   return (
     <div className='start-page' >
         <div className='kk'>
@@ -15,7 +17,7 @@ const Start = () => {
                 <p>Quizzes!</p>
             </div>
             
-            <div className='btn'>
+            <div className='btn' onClick={() => navigate('/home')}>
                 <h3>GET STARTED</h3>
             </div>
         </div>

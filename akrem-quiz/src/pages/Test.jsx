@@ -2,23 +2,28 @@ import React from 'react';
 import './test.css';
 import data from './data.js';
 import { useState } from 'react';
+import {useNavigate } from 'react-router-dom';
 
 const Test = (props) => {
+  const navigate = useNavigate();
   console.log(props.name);
   const Qcnt = 3;
   const [num,setNum] = useState(0);
-  const [score,setScore] = useState(0);
+  const [score,setScore] = useState(true);
   const [next,setNext]= useState(true);
   const [ans,setAns]= useState('');
   const [fin,setFin]= useState(true);
   const nst = ()=>{
+    
     if (num<Qcnt-1){
       setNum(num+1)
       setNext(true)
     }
     else{
+      navigate('/res')
       setFin(true)
     }
+    setScore(true)
     
   }
   const Ans = (x)=>{
@@ -32,9 +37,9 @@ const Test = (props) => {
   return (
     <div className='test-page'>
       <header>
-        <h3>X</h3>
+        <h3 onClick={() => navigate('/home')}>X</h3>
         <div className='coin-cnt'>
-          <p>620</p>
+          <p>{props.score}</p>
           <div className='img-cnt'>
             <img src='img/f5.png' alt="coin" />
           </div>
@@ -72,8 +77,12 @@ const Test = (props) => {
                     <h3>Next</h3>
                   </div>
                   <div className='res-cnt'>
+                    {ans ===item.qts[num].a && score===true ? (props.updateScore() & setScore(false)) : null}
+
                     {ans ===item.qts[num].a &&(
-                      <><p>That's the right Answer +10 coins</p>
+                      <><p 
+                      // onLoad={()=>{props.updateScore()}}
+                      >That's the right Answer +10 coins</p>
                     <div className='img-cnt-res'>
                       <img src='img/f5.png'/>
                     </div></>
